@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .icon-button.close {
+            margin-left: 24px;
+            background-image: url(rcsEditorIcon/close.png)
+        }
+
+        .icon-button.align-left {
+            background-image: url(rcsEditorIcon/align_left.png)
+        }
+
+        .icon-button.align-right {
+            background-image: url(rcsEditorIcon/align_right.png)
+        }
+
+        .icon-button.text-bigger {
+            background-image: url(rcsEditorIcon/text_bigger.png)
+        }
+
+        .icon-button.text-smaller {
+            background-image: url(rcsEditorIcon/text_smaller.png)
+        }
+
+        .icon-button.text-ss {
+            background-image: url(rcsEditorIcon/text_ss.png)
+        }
+
+        .icon-button.text-bold {
+            background-image: url(rcsEditorIcon/text_bold.png)
+        }
+
+        .icon-button {
+
+            box-sizing: border-box;
+            font-family: SHSN, sans-serif;
+            word-break: keep-all;
+            letter-spacing: -.2px;
+            padding: 0;
+            border: none;
+            cursor: pointer;
+            width: 24px;
+            height: 24px;
+            background-size: contain;
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            border-radius: 2px;
+            background-color: #fff;
+        }
+
+        .style-editor {
+
+            font-size: 14px;
+            color: #222;
+            font-weight: 500;
+            box-sizing: border-box;
+            font-family: SHSN, sans-serif;
+            word-break: keep-all;
+            letter-spacing: -.2px;
+            position: absolute;
+            display: flex;
+            gap: 4px;
+            left: 0;
+            top: -28px;
+            background-color: #fff;
+            border-radius: 4px;
+            border: 1px solid #c9c9c9;
+            z-index: 1;
+            padding: 2px 8px;
+        }
+
+        .color-edit {
+            box-sizing: border-box;
+            font-family: SHSN, sans-serif;
+            word-break: keep-all;
+            letter-spacing: -.2px;
+            padding: 0;
+            border: none;
+            cursor: pointer;
+            background-size: contain;
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            border-radius: 2px;
+            width: 16px;
+            height: 16px;
+            background-color: #000;
+        }
+
+        .color-palette {
+            cursor: pointer;
+            box-sizing: border-box;
+            font-family: SHSN, sans-serif;
+            word-break: keep-all;
+            letter-spacing: -.2px;
+            position: absolute;
+            border-radius: 4px;
+            border: 1px solid #c9c9c9;
+            z-index: 2;
+            top: 100%;
+            right: 0;
+            display: grid;
+            grid-template-columns: repeat(7, 20px);
+            background-color: #fff;
+            gap: 4px;
+            padding: 8px;
+        }
+
+        .color-item {
+            cursor: pointer;
+            box-sizing: border-box;
+            font-family: SHSN, sans-serif;
+            word-break: keep-all;
+            letter-spacing: -.2px;
+            width: 20px;
+            height: 20px;
+            border: 1px solid #f6f5f1;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="style-editor" style="top: 100px;">
+        <button class="icon-button text-bold selected" style=""></button>
+        <button class="icon-button align-left"></button>
+        <button class="icon-button align-right selected"></button>
+        <button class="icon-button text-ss selected"></button>
+        <button class="icon-button text-smaller"></button>
+        <button class="icon-button text-bigger"></button>
+        <button class="icon-button color-edit">
+            <div class="color-palette">
+                <div class="color-item" style="background: rgb(35, 35, 35);"></div>
+                <div class="color-item" style="background: rgb(64, 64, 64);"></div>
+                <div class="color-item" style="background: rgb(148, 21, 39);"></div>
+                <div class="color-item" style="background: rgb(185, 23, 36);"></div>
+                <div class="color-item" style="background: rgb(189, 70, 45);"></div>
+                <div class="color-item" style="background: rgb(100, 20, 50);"></div>
+                <div class="color-item" style="background: rgb(192, 83, 126);"></div>
+                <div class="color-item" style="background: rgb(172, 63, 104);"></div>
+                <div class="color-item" style="background: rgb(175, 109, 76);"></div>
+                <div class="color-item" style="background: rgb(150, 114, 64);"></div>
+                <div class="color-item" style="background: rgb(88, 48, 41);"></div>
+                <div class="color-item" style="background: rgb(129, 109, 51);"></div>
+                <div class="color-item" style="background: rgb(105, 105, 43);"></div>
+                <div class="color-item" style="background: rgb(0, 67, 38);"></div>
+                <div class="color-item" style="background: rgb(21, 90, 16);"></div>
+                <div class="color-item" style="background: rgb(59, 119, 40);"></div>
+                <div class="color-item" style="background: rgb(70, 128, 76);"></div>
+                <div class="color-item" style="background: rgb(26, 139, 158);"></div>
+                <div class="color-item" style="background: rgb(24, 136, 192);"></div>
+                <div class="color-item" style="background: rgb(68, 131, 207);"></div>
+                <div class="color-item" style="background: rgb(10, 56, 108);"></div>
+                <div class="color-item" style="background: rgb(77, 101, 203);"></div>
+                <div class="color-item" style="background: rgb(98, 100, 187);"></div>
+                <div class="color-item" style="background: rgb(102, 91, 166);"></div>
+                <div class="color-item" style="background: rgb(118, 79, 147);"></div>
+            </div>
+        </button>
+        <button class="icon-button close"></button>
+
+    </div>
+
+</body>
+
+</html>
